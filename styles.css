@@ -51,3 +51,7 @@ header nav a,header nav .nav-contact{font-family:HivehKamran,Vazirmatn,Tahoma,sa
 @media(max-width:1000px){h1{font-size:55px}}
 @media(max-width:740px){h1{font-size:47px}header nav a,header nav .nav-contact{font-size:20px}.lead,.about p,.app-description,.summary-card p,.page-intro p,.page-cta p,body .services-header p,body .service-card p,body .collaborate p,.contact p{font-size:22px}.app-features{font-size:20px}.mini-status{font-size:17px}footer>span:first-child{font-size:16px}}
 @media(max-width:360px){h1{font-size:42px}header nav a,header nav .nav-contact{font-size:18px}}
+
+/* Optical sizing for the lighter strokes of Kamran */
+h2,body .services-header h2,.about h2,body .collaborate h2{font-size:38px}.page-intro h1{font-size:52px}.summary-card h3,.app-info h3,body .service-card h3{font-size:32px}.contact h2{font-size:34px}.eyebrow,.section-label,.app-category{font-size:22px}.btn,.app-download,.contact-links a,.detail-link{font-size:26px}.text-link{font-size:23px}
+@media(max-width:740px){h2,body .services-header h2,.about h2,body .collaborate h2{font-size:32px}.page-intro h1{font-size:40px}.summary-card h3,.app-info h3,body .service-card h3{font-size:29px}.contact h2{font-size:30px}.eyebrow,.section-label,.app-category{font-size:20px}.btn,.app-download,.contact-links a,.detail-link{font-size:24px}.text-link{font-size:21px}}
