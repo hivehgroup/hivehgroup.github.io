@@ -42,3 +42,6 @@ h1{font-size:56px;line-height:1.7}.page-intro h1{font-size:40px}
 header nav a,header nav .nav-contact,.btn,.app-download,.text-link,.detail-link,.eyebrow,.section-label,.app-category,.contact-links a{font-family:var(--display);font-weight:800}
 header nav a,header nav .nav-contact{font-size:17px}.btn,.app-download,.contact-links a{font-size:19px}.text-link{font-size:17px}.detail-link{font-size:19px}.eyebrow,.section-label,.app-category{font-size:15px}
 @media(max-width:1000px){h1{font-size:47px}}@media(max-width:740px){h1{font-size:39px}.page-intro h1{font-size:31px}header nav a,header nav .nav-contact{font-size:15px}.btn,.app-download,.contact-links a{font-size:18px}}@media(max-width:360px){h1{font-size:35px}header nav a,header nav .nav-contact{font-size:13px}}
+
+/* Place desktop navigation on the right and brand on the left. */
+@media(min-width:741px){header{flex-direction:row-reverse}}
