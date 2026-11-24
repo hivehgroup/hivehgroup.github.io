@@ -1,0 +1,31 @@
+/* Shared navigation, footer and gallery refinements. */
+.wrap>header{position:sticky;top:0;z-index:30;background:#fffffff5;backdrop-filter:blur(12px);transition:box-shadow .2s}
+.wrap>header.is-scrolled{box-shadow:0 8px 18px #00000006}
+.btn,.app-download,header nav a,.contact-links a,.footer-socials a{transition:transform .2s,background .2s,color .2s,box-shadow .2s,border-color .2s}
+.btn:hover,.app-download:hover{transform:translateY(-2px)}
+.btn:active,.app-download:active{transform:translateY(1px)}
+.site-footer{display:block;padding:30px 0 24px}
+.footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}
+.footer-brand{display:inline-flex;align-items:center}.footer-logo{display:block;width:125px;height:auto}
+.footer-socials{display:flex;gap:10px}.footer-socials a{display:grid;place-items:center;width:44px;height:44px;border:1px solid #e2e7e3;border-radius:14px;background:white;color:#546259}
+.footer-socials a:hover{color:#087e59;background:#f1f7f3;border-color:#bcd7c8;transform:translateY(-3px)}
+.footer-socials svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#777;font:400 13px/1.9 Vazirmatn,Tahoma,sans-serif}
+.gallery-viewer{width:min(1080px,calc(100vw - 32px));height:min(900px,calc(100dvh - 32px));max-width:none;max-height:none;padding:0;border:1px solid #ffffff25;border-radius:22px;background:#101914;color:#fff;overflow:hidden;box-shadow:0 20px 80px #0008}
+.gallery-viewer::backdrop{background:#06110be8;backdrop-filter:blur(6px)}
+.viewer-layout{height:100%;display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.viewer-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 18px;border-bottom:1px solid #ffffff15}
+.viewer-title{color:#fff;font:400 16px/1.8 Vazirmatn,Tahoma,sans-serif;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.viewer-close{flex-shrink:0;display:grid;place-items:center;width:44px;height:44px;font:400 30px/1 Arial,sans-serif}
+.gallery-viewer button{cursor:pointer;border:1px solid #ffffff35;border-radius:12px;background:#ffffff0a;color:#fff;transition:background .2s,transform .2s}
+.gallery-viewer button:hover{background:#ffffff20}.gallery-viewer button:focus-visible{outline:3px solid #8ad0a8;outline-offset:3px}
+.viewer-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;padding:14px;touch-action:pan-y}
+.viewer-image{display:block;width:100%;height:100%;object-fit:contain;border-radius:8px}
+.viewer-image[hidden],.viewer-error[hidden]{display:none}.viewer-error{text-align:center;padding:24px;font-size:16px}
+.viewer-controls{display:flex;align-items:center;justify-content:center;gap:22px;padding:12px 18px 16px;border-top:1px solid #ffffff15}
+.viewer-controls button{min-height:44px;min-width:90px;padding:7px 16px;font:800 16px/1.7 HivehBaloo,Vazirmatn,Tahoma,sans-serif}
+.viewer-count{font:400 15px/1.8 Vazirmatn,Tahoma,sans-serif;min-width:75px;text-align:center}
+@media(max-width:740px){.wrap>header{padding-top:16px;padding-bottom:16px;min-height:128px}.footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;font-size:12px}.footer-top{gap:16px}.footer-logo{width:110px}.gallery-viewer{width:calc(100vw - 16px);height:calc(100dvh - 16px);border-radius:16px}.viewer-header{padding:10px 12px;gap:10px}.viewer-title{font-size:14px}.viewer-stage{padding:10px}.viewer-controls{gap:12px}.viewer-controls button{min-width:80px}}
+@media(prefers-reduced-motion:reduce){.wrap>header,.btn,.app-download,header nav a,.contact-links a,.footer-socials a,.gallery-viewer button{transition:none}.btn:hover,.app-download:hover,.footer-socials a:hover{transform:none}}
+
+.app-gallery button.app-screen{padding:0;cursor:zoom-in;font:inherit;text-align:inherit}.app-gallery button.app-screen:hover{transform:translateY(-4px)}.app-gallery button.app-screen:focus-visible{outline:3px solid #087e59;outline-offset:4px}
